@@ -1,0 +1,30 @@
+{
+    "Login": {
+        "whatsyourname": "Tên bạn là gì?",
+        "password": "Mật khẩu?",
+        "entername": "Nhập họ tên hoặc tên đăng nhập",
+        "enterpassword": "Nhập mật khẩu",
+        "login": "Đăng nhập"
+    },
+
+    "Home": {
+        "greeting1": "Xin chào",
+        "login": "Đăng nhập",
+        "logout": "Đăng xuất",
+        "thisweek": "Tuần này",
+        "nextweek": "Tuần sau"
+    },
+
+    "Settings": {
+        "comingsoon": "Chờ bản Update tiếp theo nhé!",
+        "settings": "Cài Đặt"
+    },
+
+    "Books": {
+        "books": "SGK"
+    },
+
+    "Detail" : {
+        "nodate": "Chưa load được ngày :((("
+    }
+}

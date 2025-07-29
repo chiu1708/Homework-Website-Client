@@ -1,0 +1,24 @@
+
+/* App style */
+.app {
+    width: 100svw;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: var(--background-image);
+    background-size: cover;
+}
+
+
+.content-container {
+    width: 100%;
+    flex-grow: 1;
+}
+
+
+.footer-container {
+    width: 100%;
+    height: 60px;
+}

@@ -1,0 +1,41 @@
+* {
+    color: var(--background-color);
+}
+
+.header-wrapper {
+    width: 100%;
+    display: flex;
+    padding: var(--margin-large) 0;
+}
+
+
+.header-wrapper h1 {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--background-color);
+}
+.header-wrapper div {
+    color: var(--background-color);
+
+}
+
+.header-wrapper .info-container {
+    padding: var(--margin-large) 0 0 var(--margin-medium);
+    width: 60%;
+}
+
+
+.header-wrapper .user-container {
+    padding: var(--margin-large) var(--margin-medium) 0 0;
+    display: flex;
+    width: 40%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-wrapper .user-container button {
+    height: 50px;
+    width: 60px;
+}
+.header-wrapper .user-container button i {
+    font-size: 18px;
+}

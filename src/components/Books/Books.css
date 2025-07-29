@@ -1,0 +1,13 @@
+.books-page {
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color-70);
+    overflow: hidden;
+}
+
+.books-page .books-container {
+    padding: 0 var(--margin-medium);
+}
+.books-page .books-container h1 {
+    padding: var(--margin-small) 0;
+}

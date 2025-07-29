@@ -1,0 +1,31 @@
+.login-page {
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color-50);
+    overflow: hidden;
+}
+
+.login-container {
+    height: 400px;
+    max-height: 100%;
+    padding: 0px var(--margin-medium);
+}
+
+.login-container .form-container .form-item {
+    margin-bottom: 40px;
+}
+
+.login-container .form-container .form-item label {
+    color: var(--text-color-4);
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.login-container .form-container .button-container button {
+    width: 140px;
+    height: 40px;
+    background-color: var(--background-color-BB);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+

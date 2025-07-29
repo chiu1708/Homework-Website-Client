@@ -1,0 +1,27 @@
+{
+    "Login": {
+        "What's your name?": "What's your name?",
+        "Password?": "Password?"
+    },
+
+    "Home": {
+        "greeting1": "Hello",
+        "login": "Login",
+        "logout": "Logout",
+        "thisweek": "This week",
+        "nextweek": "Next week"
+    },
+
+    "Settings": {
+        "comingsoon": "Coming Soon",
+        "settings": "Cài Đặt"
+    },
+
+    "Books": {
+        "books": "Books"
+    },
+
+    "Detail" : {
+        "nodate": "No date :((("
+    }
+}

@@ -1,0 +1,22 @@
+.settings-page {
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color-70);
+    overflow: hidden;
+}
+
+.settings-page .settings-container {
+    padding: 0 var(--margin-medium);
+}
+.settings-page .settings-container h1 {
+    padding: var(--margin-small) 0;
+}
+.settings-page .settings-container .box {
+    padding: var(--margin-small) var(--margin-very-small);
+}
+.settings-page .settings-container i {
+    margin: 0 var(--margin-very-small);
+}
+.settings-page .settings-container span {
+    font-size: 20px;
+}

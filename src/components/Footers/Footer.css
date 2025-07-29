@@ -1,0 +1,76 @@
+.footer-container {
+    height: var(--footer-height);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: .4s;
+}
+.minimized.footer-container {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: .4s;
+    border-radius: 200px;
+}
+.footer-wrapper {
+    background-color: var(--background-color-30);
+    width: 100svw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: .4s ease-in-out;
+}
+.minimized .footer-wrapper {
+    width: 0px;
+    height: 20px;
+    border-radius: 200px;
+    transition: .4s ease-in-out;
+}
+
+.minimize-button-wrapper {
+    min-width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    transition: .4s;
+}
+.minimize-button-wrapper button {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease-in-out;
+}
+.minimized .minimize-button-wrapper button {
+    transform: rotate(180deg);
+    transition: .4s ease-in-out;
+}
+
+.buttons-group-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: var(--margin-small);
+    gap: 10px;
+    transition: .4s ease-in-out;
+    flex-grow: 1;
+    overflow: hidden;
+    opacity: 1;
+}
+.minimized .buttons-group-wrapper {
+    transition: .4s ease-in-out;
+    width: 0px;
+    opacity: 0;
+}
+.buttons-group-wrapper button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+.minimized .buttons-group-wrapper button {
+    box-shadow: none;
+}

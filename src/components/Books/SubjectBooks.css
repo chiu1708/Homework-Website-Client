@@ -1,0 +1,7 @@
+.box {
+    padding: var(--margin-small) var(--margin-very-small);
+}
+.name {
+    margin: 0 var(--margin-very-small);
+    font-size: 18px;
+}
