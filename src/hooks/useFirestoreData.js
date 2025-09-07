@@ -26,7 +26,7 @@ const useFirestoreData = (lang='vi') => {
 				let contentsText = "";
 				for (let i = 0; i < data.contents.length; i++) {
 					if (data.contents[i].type == "text") {
-						const text = data.contents[i].content['text-'+lang];
+						const text = data.contents[i].text[lang];
 						contentsText += contentsText === "" ? text : ", " + text;
 					}
 				}
@@ -37,8 +37,8 @@ const useFirestoreData = (lang='vi') => {
 						contents: data.contents,
 						contentsText: contentsText,
 						subjectColor: data.subject.color,
-						subjectName: data.subject['name-' + lang],
-						subjectShortName: data.subject['short-name-' + lang],
+						subjectName: data.subject.name[lang],
+						subjectShortName: data.subject.shortName[lang],
 						books: data.subject.books
 				};
 			return task;});
@@ -61,7 +61,7 @@ const useFirestoreData = (lang='vi') => {
 
 				for (let i = 0; i < data.books.length; i++) {
 					books.push({
-						name: data.books[i]['name-' + lang],
+						name: data.books[i].name[lang],
 						link: data.books[i].link,
 						grade: data.books[i].grade
 					});
@@ -81,8 +81,8 @@ const useFirestoreData = (lang='vi') => {
 
 				const subjects = {
 					id: doc.id,
-					name: data['name-' + lang],
-					shortName: data['short-name-' + lang],
+					name: data.name[lang],
+					shortName: data.shortName[lang],
 					color: data.color,
 					books: books
 				}

@@ -73,15 +73,15 @@ const Detail = (animationType = 0) => {
               <div key={index} className="task-container box">
                 {
                   content.type == 'text' &&
-                  <p>&bull; {content.content["text-"+lang]}</p>
-                }
+                  <p>&bull; {content.text[lang]}</p>
+              }
                 {
                   content.type == 'image' &&
                   <img src={content.link}></img>
                 }
                 {
                   content.type == 'link' &&
-                  <a href={content.link}>{content['text-'+lang]}</a>
+                  <a href={content.link}>{content.text[lang]}</a>
                 }
               </div>
             )

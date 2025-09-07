@@ -17,7 +17,7 @@ const Home = () => {
     <motion.div className="home-page"      
       initial={{opacity: 0}}
       animate={{opacity: 1}}
-      transition={{duration: 0.3}}>
+      transition={{duration: 0.2}}>
       <HomeHeader/>
       <div className="contents-container">
         <div className="week-container this-week-container">

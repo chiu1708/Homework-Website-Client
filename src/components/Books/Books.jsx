@@ -21,9 +21,11 @@ const Books = () => {
       <BasicHeader/>
       <div className="books-container">
         <h1 className="big-text">{t("books")}</h1>
-        {
-          subjects.map((subject) => <SubjectBooks key={subject.id} {...subject} />)
-        }
+        <div className="subjects-books-container d-flex flex-column gap-3">
+          {
+            subjects.map((subject) => <SubjectBooks key={subject.id} {...subject} />)
+          }
+        </div>
       </div>
     </motion.div>
   )
