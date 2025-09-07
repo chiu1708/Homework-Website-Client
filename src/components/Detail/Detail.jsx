@@ -94,7 +94,7 @@ const Detail = (animationType = 0) => {
             }
           </div>
         </div>
-        </div>
+      </div>
     </motion.div>
   )
 }

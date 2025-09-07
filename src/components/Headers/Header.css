@@ -1,5 +1,5 @@
 .header {
-    height: 120px;
+    height: calc(var(--footer-height) * 2);
     display: flex;
     align-items: space-between;
     padding: var(--margin-very-large) var(--margin-medium);

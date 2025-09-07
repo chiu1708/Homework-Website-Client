@@ -7,6 +7,7 @@
 }
 
 .detail-page .detail-container {
+    height: calc(100% - (var(--footer-height)*2));
     padding: 0 var(--margin-medium);
     flex-grow: 1;
 }
@@ -19,8 +20,12 @@
 }
 
 .detail-page .detail-container .detail-content-container {
-    height: 340px;
+    height: calc(100% - 140px);
     overflow: scroll;
+    scrollbar-width: none;
+}
+.detail-page .detail-container .detail-content-container::-webkit-scrollbar {
+    display: none;
 }
 .detail-page .detail-container .navigation-buttons-container {
     display: flex;
