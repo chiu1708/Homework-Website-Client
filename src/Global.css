@@ -100,6 +100,7 @@
     background-color: var(--background-color-70);
     border-radius: 16px;
     padding: var(--margin-medium) var(--margin-small);
+    word-wrap: break-word;
 }
 .blurred-box {
     background-color: var(--background-color-50);

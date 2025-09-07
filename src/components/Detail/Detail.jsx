@@ -35,9 +35,6 @@ const Detail = (animationType = 0) => {
     }
   }, [tasks]);
   
-  let formattedDate = task ? dayjs(task.date).format('dddd, D MMMM, YYYY') : t("nodate");
-  formattedDate = formattedDate[0].toUpperCase() + formattedDate.substr(1);
-  
   const nextIndex = (index) => {
     if (index < tasks.length - 1) {
       return index+1;
@@ -55,18 +52,13 @@ const Detail = (animationType = 0) => {
   console.log(animationType);
 
   return (task &&
-    <motion.div
-      className="detail-page"
-      initial={animationType.animationType === 1 ? {transform: "translateX(-100%)", opacity: 0} : {transform: "translateX(100%)", opacity: 0}}
-      animate={{transform: "translateX(0)", opacity: 1}}
-      exit={animationType.animationType === 1 ? {transform: "translate(100%)", opacity: 0} : {transform: "translate(-100%)", opacity: 0}}
-      transition={{duration: 0.4}}>      
+    <motion.div className="detail-page">      
       <BasicHeader/>
       <div className="detail-container d-flex flex-column justify-content-between">
         <div className="detail-content-container d-flex flex-column gap-3">
           <div className="box title d-flex flex-column gap-1">
             <p className="subject-title"><b className={task.subjectColor}>{task.subjectName}</b></p>
-            <p>{formattedDate}</p>
+            <p>{dayjs(task.deadline).format('dddd, D MMMM')}</p>
           </div>
           {task.contents.map((content, index) => {
             return (

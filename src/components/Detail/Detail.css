@@ -2,7 +2,6 @@
     height: 100%;
     width: 100%;
     background-color: var(--background-color-70);
-    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -19,10 +18,16 @@
     font-size: 24px;
 }
 
+.detail-page .detail-container .detail-content-container {
+    height: 340px;
+    overflow: scroll;
+}
 .detail-page .detail-container .navigation-buttons-container {
     display: flex;
     justify-content: space-between;
-    padding: var(--margin-medium);
+    align-items: center;
+    padding: 0 var(--margin-medium);
+    height: calc(var(--footer-height) * 2.5)
 }
 
 .detail-page .detail-container .navigation-buttons-container .button-container {
@@ -33,7 +38,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    height: 120px;
+    height: 100px;
     text-decoration: none;
     font-size: 30px;
 }

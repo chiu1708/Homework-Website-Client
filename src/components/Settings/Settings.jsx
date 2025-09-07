@@ -8,11 +8,10 @@ const Settings = () => {
   const {t} = useTranslation("Settings");
   return (
     <motion.div
-      className="settings-page"
-      initial={{height: "0%", transform: "translateY(100%)"}}
-      animate={{height: "100%", transform: "translateY(0%)"}}
-      exit={{height: "0%", transform: "translateY(100%)"}}
-      transition={{duration: 0.4}}>      
+      className="settings-page"      
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      transition={{duration: 0.2}}>     
       <BasicHeader/>
       <div className="settings-container">
         <h1 className="big-text">{t("settings")}</h1>

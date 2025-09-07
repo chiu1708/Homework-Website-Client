@@ -12,7 +12,8 @@
         "login": "Đăng nhập",
         "logout": "Đăng xuất",
         "thisweek": "Tuần này",
-        "nextweek": "Tuần sau"
+        "nextweek": "Tuần sau",
+        "laterweeks": "Những tuần tới"
     },
 
     "Settings": {

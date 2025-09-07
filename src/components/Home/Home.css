@@ -1,7 +1,8 @@
 .home-page {
-    background-color: var(--background-color-10);
+    /* background-color: var(--background-color-10); */
     height: 100%;
     width: 100%;
+    padding-top: var(--margin-large )
 }
 
 .week-container .week-header-container {
@@ -19,12 +20,13 @@
 .week-container .contents-container .contents {
     border-radius: 0 0 12px 12px;
     padding: 0;
+    padding-top: var(--margin-small);
 }
 
 
 
 .week-container .contents-container .home-content-container {
-    padding: var(--margin-small) var(--margin-very-small) var(--margin-very-small);
+    padding: 0 var(--margin-very-small) var(--margin-very-small);
 }
 
 .week-container .contents-container .home-content-container p {

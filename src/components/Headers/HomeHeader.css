@@ -5,6 +5,9 @@
 .header-wrapper {
     width: 100%;
     display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     padding: var(--margin-large) 0;
 }
 
@@ -21,7 +24,7 @@
 
 .header-wrapper .info-container {
     padding: var(--margin-large) 0 0 var(--margin-medium);
-    width: 60%;
+    width: 80%;
 }
 
 

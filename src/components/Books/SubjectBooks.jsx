@@ -7,7 +7,7 @@ const SubjectBooks = (subject) => {
   return (
     <div className="box d-flex justify-content-between">
         <b className={"name " + subject.color}>{subject.name}</b>
-        <div className="books d-flex gap-4">
+        <div className="books d-flex gap-2">
           {
             subject.books.map((book) => {
               return (

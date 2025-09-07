@@ -14,11 +14,16 @@
 
 .content-container {
     width: 100%;
-    flex-grow: 1;
+    height: calc(100% - var(--footer-height));
+    overflow: scroll;
+    scrollbar-width: none; /* for firefox */
+}
+.content-container::-webkit-scrollbar { /* for chromium */
+    display: none;
 }
 
 
 .footer-container {
     width: 100%;
-    height: 60px;
+    height: var(--footer-height);
 }

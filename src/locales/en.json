@@ -9,7 +9,8 @@
         "login": "Login",
         "logout": "Logout",
         "thisweek": "This week",
-        "nextweek": "Next week"
+        "nextweek": "Next week",
+        "laterweeks": "Later weeks"
     },
 
     "Settings": {
