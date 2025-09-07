@@ -8,7 +8,7 @@ import Task from './Task';
 import { NavLink } from 'react-router-dom';
 import dayjs from 'dayjs';
 import isBetween from 'dayjs/plugin/isBetween'
-import isSameOrAfter from 'dayjs/plugin/isSameOrAFter'
+import isSameOrAfter from 'dayjs/plugin/isSameOrAfter'
 dayjs.extend(isBetween)
 dayjs.extend(isSameOrAfter)
 
