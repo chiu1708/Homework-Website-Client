@@ -23,7 +23,7 @@ const Home = () => {
   useEffect(() => {
     setThisWeekTasks(tasks.filter((task) => {
       const deadlineDate = dayjs(task.deadline);
-      return deadlineDate.isBetween(dayjs().startOf("week"), dayjs().endOf("week"), "day", "[]");
+      return deadlineDate.isBetween(dayjs(), dayjs().endOf("week"), "day", "[]");
     }));
     setNextWeekTasks(tasks.filter((task) => {
       const deadlineDate = dayjs(task.deadline);

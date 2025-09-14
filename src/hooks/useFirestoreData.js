@@ -1,7 +1,7 @@
 import { collection, onSnapshot, query } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { db } from "../firebase";
-
+import dayjs from 'dayjs';
 
 const useFirestoreData = (lang='vi') => {
   const [tasks, setTasks] = useState([]);
@@ -41,7 +41,12 @@ const useFirestoreData = (lang='vi') => {
 						subjectShortName: data.subject.shortName[lang],
 						books: data.subject.books
 				};
-			return task;});
+			return task;})
+			.filter((task) => {
+					const deadlineDate = dayjs(task.deadline);
+					return !deadlineDate.isBefore(dayjs(), "day")
+			})
+			.sort((a, b) => a.deadline - b.deadline);
 			setTasks(tasksData);
 		});
 		
