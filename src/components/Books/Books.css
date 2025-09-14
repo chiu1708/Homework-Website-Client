@@ -1,8 +1,18 @@
 .books-page {
     width: 100%;
     background-color: var(--background-color-70);
+    height: 100%;
 }
 
 .books-page .books-container {
     padding: var(--margin-small) var(--margin-medium);
+    height: calc(100% - (var(--footer-height)*2));
+}
+.books-page .books-container .subjects-books-container {
+    height: calc(100% - 100px);
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.books-page .books-container .subjects-books-container::-webkit-scrollbar {
+    display: none;
 }
